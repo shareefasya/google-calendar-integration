@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <!-- document's content type -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        
+        <!-- make the document responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- add microsoft edge compatibility -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- document's title -->
+        <title>Google Calendar</title>
+
+        <!-- import google calendar class styles -->
+        <link rel="stylesheet" href="css/google-calendar-styles.css">
+
+        <!-- import google calendar class script -->
+        <script src="js/google-calendar-class.js"></script>
+
+    </head>
+
+    <body>
+    
+        <script>
+
+            new GoogleCalendar({
+                calendar: {
+                    id: "ENTER GOOGLE CALENDAR ID",
+                    webAppURL: "ENTER WEB APP URL",
+                    from: 9,
+                    to: 17,
+                    duration: 30,
+                    disableWeekends: true,
+                    delay: 60
+                },
+                darkMode: true
+            });
+
+        </script>
+
+    </body>
+    
+</html>
